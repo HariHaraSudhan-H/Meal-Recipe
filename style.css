@@ -1,0 +1,341 @@
+body {
+    background-color: #cad2c5;
+}
+
+a {
+    text-decoration: none;
+    color: #cad2c5;
+}
+
+/* Nav bar Styles */
+header {
+    background-color: #d90429;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: 800;
+}
+
+.remove {
+    display: none;
+}
+
+/* Heading Styles */
+#heading {
+    text-align: center;
+    margin: 2rem;
+    font-weight: 500;
+    color: #d90429;
+    font-size: 4rem;
+    font-family: 'Domine', serif;
+    ;
+    margin-top: 6rem;
+
+}
+
+/* Search Form Styles */
+#searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchValue {
+    width: 20rem;
+    border: 0px;
+    border-radius: 20px;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+}
+
+#searchButton,
+#clearText,
+#closeFav {
+    border: 0px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#searchButton {
+    margin-left: 10px;
+    position: relative;
+    right: 48px;
+}
+
+#clearText {
+    position: relative;
+    right: 48px;
+    background-color: transparent;
+}
+
+#RandomRecipe {
+    border: 0px;
+    background-color: #003554;
+    color: #cad2c5;
+    margin: 1rem;
+    border-radius: 25px;
+    padding: 0.5rem;
+}
+
+/* Meal List Styles */
+#display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#searchResult {
+    display: none;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+.food-card {
+    width: 15%;
+    height: 400px;
+    margin: 0 1rem;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.favIcon {
+    width: 2rem;
+    height: 2rem;
+    padding: 2px;
+    font-size: 1rem;
+}
+
+.meal-image {
+    width: 100%;
+    height: 55%;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.moreDetails {
+    font-size: 0.75rem;
+}
+
+.card-body {
+    width: 100%;
+}
+
+
+/* Details Page */
+.mealDetails {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 60%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem auto;
+    box-shadow: 0px 0px 10px 10px #a9b0a4;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.detailName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.Video {
+    padding: 0.5rem 1rem;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.Video:hover {
+    background-color: #003554;
+    color: #d90429;
+}
+
+
+
+.meal-detail-image {
+    width: 40%;
+    height: 40%;
+    border-radius: 30px;
+}
+
+.detailInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mealTitle {
+    font-size: 2rem;
+    color: #d90429;
+    font-family: 'Domine', serif;
+
+}
+
+/* Favourites List */
+
+#favourites-list {
+    width: 40%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30%;
+    top: 25%;
+    background-color: #a9b0a4;
+    max-height: 60vh;
+    border-radius: 25px;
+}
+
+.fav-card {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 150px;
+    margin: 10px auto;
+}
+
+.meal-fav-image {
+    height: 100%;
+}
+
+#FavouritesHeading {
+    font-size: 2rem;
+    margin: 1rem 0rem;
+    color: #d90429;
+    background-color: inherit;
+    font-family: 'Domine', serif;
+    width: 100%;
+    margin-top: 0px;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#fav-list{
+    overflow-y: scroll;
+    width: 100%;
+}
+
+
+/* media queries */
+@media screen and (max-width : 1500px) {
+    .food-card {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width : 1050px) {
+    .food-card {
+        width: 25%;
+    }
+
+    #display {
+        justify-content: space-around;
+    }
+
+    #favourites-list {
+        width: 50%;
+        right: 25%;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    #favourites-list {
+        width: 60%;
+        right: 15%;
+    }
+}
+
+@media screen and (max-width : 815px) {
+    .food-card {
+        width: 30%;
+        margin: 0 0.25rem;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .food-card {
+        width: 35%;
+    }
+
+    #searchValue {
+        width: 15rem;
+    }
+
+    #favourites-list {
+        width: 80%;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width : 575px) {
+    .food-card {
+        width: 55%;
+    }
+
+    #heading {
+        font-size: 3rem;
+    }
+
+    #searchForm {
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    .fav-moreDetails {
+        font-size: 0.5rem;
+    }
+
+    .fav-card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #favourites-list {
+        width: 90%;
+        right: 5%;
+    }
+
+    .fav-card-body {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+
+    .meal-fav-image {
+        width: 60%;
+    }
+
+    .food-card {
+        width: 70%;
+    }
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3e423c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #858383;
+}
